@@ -37,8 +37,8 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /var/www/waba-backend-v2
-            docker compose pull
-            docker compose up -d --remove-orphans
+            docker-compose pull
+            docker-compose up -d --remove-orphans
 
       # 5️⃣ Notify Telegram
       - name: Notify Telegram
