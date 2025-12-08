@@ -26,7 +26,7 @@ async function startServer() {
         app.use(express.json());
 
         app.get("/", (req, res) => {
-          res.send("Konosuba 3.0 - Docker");
+          res.send("Konosuba 3.1 - Docker");
         });
 
         app.use("/whatsapp", whatsappRoutes);
